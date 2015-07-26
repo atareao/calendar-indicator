@@ -1,0 +1,259 @@
+calendar-indicator (0.3.2-0extras14.04.0) vivid; urgency=medium
+
+  * Some bugs fixed by Matias
+
+ -- Lorenzo Carbonell <lorenzo@xps13>  Sun, 12 Jul 2015 20:58:10 +0200
+
+calendar-indicator (0.3.1-0extras14.04.3) trusty; urgency=medium
+
+  * Fixed bug #1312091
+  * Fixed bug #1234436
+  * Updated translations
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 28 Mar 2015 12:57:47 +0100
+
+calendar-indicator (0.3.0-0extras14.04.1) trusty; urgency=medium
+
+  * Updated translations
+  * Improved Calendar Window desing
+  * Button in calendar window to go to currend date 
+
+ -- Lorenzo Carbonell <atareao@trusty>  Sun, 13 Apr 2014 21:36:41 +0200
+
+calendar-indicator (0.2.1-0extras14.04.0) trusty; urgency=low
+
+  * Fixed
+
+ -- Lorenzo Carbonell <atareao@trusty>  Mon, 24 Feb 2014 02:59:40 +0100
+
+calendar-indicator (0.2.1-0extras13.10.0) trusty; urgency=medium
+
+  * Updated translations
+
+ -- Lorenzo Carbonell <atareao@trusty>  Mon, 24 Feb 2014 02:27:11 +0100
+
+calendar-indicator (0.2.0-0extras13.10.1) saucy; urgency=low
+
+  * chmod +x calendar-indicator
+
+ -- Lorenzo <atareao_s@saucy>  Sat, 02 Nov 2013 08:46:15 +0100
+
+calendar-indicator (0.2.0-0extras13.10.0) saucy; urgency=low
+
+  * #1089065 Autostart
+  * #1098771 Updated translations
+  * #1173011 Cannot see today's events
+  * #1189100 Fixed calendar size
+  * #1217270 Calendar Indicator doesn't display events in Saucy
+  * #1095177 Allow selecting multiple calendars
+
+ -- Lorenzo <atareao_s@saucy>  Fri, 01 Nov 2013 20:47:29 +0100
+
+calendar-indicator (0.1.1-0extras13.04.3) raring; urgency=low
+
+  * Fixed a bug with directories
+
+ -- Lorenzo <atareao_r@raring>  Sun, 18 Aug 2013 13:03:11 +0200
+
+calendar-indicator (0.1.1-0extras13.04.1) raring; urgency=low
+
+  * To raring ringtail
+
+ -- Lorenzo <atareao_r@raring>  Sat, 17 Aug 2013 19:42:38 +0200
+
+calendar-indicator (0.1.0.8.quantal.2-1ubuntu1) quantal; urgency=low
+
+  * Fixed a bug with dateutil
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Tue, 11 Dec 2012 07:01:05 +0100
+
+calendar-indicator (0.1.0.8.quantal.1-1ubuntu1) quantal; urgency=low
+
+  * using exception with parsing rule
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Mon, 10 Dec 2012 23:10:49 +0100
+
+calendar-indicator (0.1.0.5-1ubuntu1) quantal; urgency=low
+
+  * Fixed bug #1086943
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Thu, 06 Dec 2012 18:09:24 +0100
+
+calendar-indicator (0.1.0.4-1ubuntu1) quantal; urgency=low
+
+  * Fixed bug #1086335
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Tue, 04 Dec 2012 21:32:52 +0100
+
+calendar-indicator (0.1.0.3-1ubuntu1) quantal; urgency=low
+
+  * using rfc3339
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Mon, 03 Dec 2012 21:41:22 +0100
+
+calendar-indicator (0.1.0.2-1ubuntu1) quantal; urgency=low
+
+  * Fixed a bug in calendar window
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 02 Dec 2012 11:45:33 +0100
+
+calendar-indicator (0.1.0.1-1ubuntu1) quantal; urgency=low
+
+  * Fixed bug #1083611 It is not starting at all during launching of the apps. Crashing during start.
+  * Fixed bug #1083624 Events from all calendars displayed under "Show Calendar", even though only one calendar was selected
+  * Fixed bug #1083625 No calendar events show up for one of my calendars
+  * Fixed bug #1084776 Doesn't autostart
+  * Fixed bug #1084211 At first start calendars not showing up in colors tab
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 02 Dec 2012 07:50:21 +0100
+
+calendar-indicator (0.1.0.0-1ubuntu1) quantal; urgency=low
+
+  * Final release
+  * Fixed a Z bug
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Tue, 27 Nov 2012 06:03:20 +0100
+
+calendar-indicator (0.0.9.4-1ubuntu1) quantal; urgency=low
+
+  * Add, edit and delete events
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Mon, 26 Nov 2012 22:12:19 +0100
+
+calendar-indicator (0.0.9.3-1ubuntu1) quantal; urgency=low
+
+  * Fixed a bug with preferences
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Mon, 26 Nov 2012 07:33:12 +0100
+
+calendar-indicator (0.0.9.2-1ubuntu1) quantal; urgency=low
+
+  * Fixed a bug with launcher
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Mon, 26 Nov 2012 07:25:15 +0100
+
+calendar-indicator (0.0.9.1-1ubuntu1) quantal; urgency=low
+
+  * /usr/bin/calendar-indicator
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 25 Nov 2012 22:03:52 +0100
+
+calendar-indicator (0.0.9.0-1ubuntu1) quantal; urgency=low
+
+  * Alfa version of definitive google calendar indicator
+  * A lot of new features
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 25 Nov 2012 21:08:26 +0100
+
+calendar-indicator (0.0.3.3-1ubuntu1) precise; urgency=low
+
+  * Fixed a bug with preferences Dialog
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Mon, 23 Jul 2012 00:06:16 +0200
+
+calendar-indicator (0.0.3.2-1ubuntu1) precise; urgency=low
+
+  * Fixed a bug with change bettween calendars
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 22 Jul 2012 22:52:37 +0200
+
+calendar-indicator (0.0.3.1-1ubuntu1) precise; urgency=low
+
+  * Fixed a bug with preferences dialog
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 22 Jul 2012 22:17:16 +0200
+
+calendar-indicator (0.0.3.0-1ubuntu1) precise; urgency=low
+
+  * Changed Google API to version 3
+  * Changed to OAuth
+  * New method to access to Google Calendar
+  * Improved checking new events
+  * Fixed bug #914192
+  * Fixed bug #914659
+  * Fixed bug #938596 
+  * Fixed bug #939848 
+  * Fixed bug #939924
+  * Fixed bug #939931
+  * Fixed bug #948247
+  * Fixed bug #952672
+  * Fixed bug #986508
+  * Fixed bug #1027630
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 22 Jul 2012 21:28:56 +0200
+
+calendar-indicator (0.0.2.11-1ubuntu1) precise; urgency=low
+
+  * Fixed some bugs
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 22 Jul 2012 17:44:08 +0200
+
+calendar-indicator (0.0.2.10-1ubuntu1) precise; urgency=low
+
+  * Fixed a bug with preferences Dialog
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 21 Jul 2012 20:35:01 +0200
+
+calendar-indicator (0.0.2.9-1ubuntu1) precise; urgency=low
+
+  * Updated translations
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 21 Jul 2012 18:22:31 +0200
+
+calendar-indicator (0.0.2.8-1ubuntu1) precise; urgency=low
+
+  * Improved configuration file
+  * Changed GnomeKeyring Access
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 21 Jul 2012 18:15:07 +0200
+
+calendar-indicator (0.0.2.7-1ubuntu1) oneiric; urgency=low
+
+  * Fixed a bug with about dialog
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 19 Feb 2012 21:32:51 +0100
+
+calendar-indicator (0.0.2.6-1ubuntu1) oneiric; urgency=low
+
+  * Using introspection for Gnome Keyring
+  * Now day appear in panel
+  * Using configuration file
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 19 Feb 2012 08:25:07 +0100
+
+calendar-indicator (0.0.2.5-1ubuntu1) oneiric; urgency=low
+
+  * Fixed a bug with initiation
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Wed, 11 Jan 2012 22:00:22 +0100
+
+calendar-indicator (0.0.2.4-1ubuntu1) oneiric; urgency=low
+
+  * Fixed a bug with passwords
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Tue, 10 Jan 2012 06:26:29 +0100
+
+calendar-indicator (0.0.2.3-1ubuntu1) oneiric; urgency=low
+
+  * Fixed a bug with icons
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 08 Jan 2012 03:26:59 +0100
+
+calendar-indicator (0.0.2.2-1ubuntu1) oneiric; urgency=low
+
+  * Fixed a simple bug
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 07 Jan 2012 21:14:53 +0100
+
+calendar-indicator (0.0.2.1-1ubuntu2) oneiric; urgency=low
+
+  * Fixed a bug with calendar events
+  * Fixed times to check eventes
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 07 Jan 2012 21:13:10 +0100
+
+calendar-indicator (0.0.1.7-1ubuntu1) oneiric; urgency=low
+
+  * Ported to Gtk+-3.0
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 07 Jan 2012 09:24:46 +0100

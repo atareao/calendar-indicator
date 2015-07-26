@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Type=Application
+Exec = /opt/extras.ubuntu.com/calendar-indicator/bin/calendar-indicator
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[es_ES]=calendar-indicator-autostart.desktop
+Name=Calendar-Indicator
+Comment[es_ES]=Calendar-Indicator official shortcut
+Comment=Calendar-Indicator official shortcut

@@ -1,0 +1,403 @@
+# Turkish translation for calendar-indicator
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the calendar-indicator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: calendar-indicator 0.3.1\n"
+"Report-Msgid-Bugs-To: lorenzo.carbonell.cerezo@gmail.com\n"
+"POT-Creation-Date: 2015-03-28 12:58+0100\n"
+"PO-Revision-Date: 2014-05-09 18:41+0000\n"
+"Last-Translator: jan <Unknown>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"X-Generator: Launchpad (build 17413)\n"
+"X-Launchpad-Export-Date: 2015-03-28 08:28+0000\n"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:143
+#, fuzzy
+msgid ""
+"You have to authorize Calendar-Indicator to manage your Google Calendar.\n"
+" Do you want to authorize?"
+msgstr ""
+"Takvim gösterge uygulamasının çalışması için Goole Takvim erişimine izin "
+"vermelisiniz."
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:194
+#, fuzzy
+msgid "Add new calendar"
+msgstr "Takvimi Göster"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:195
+#, fuzzy
+msgid "Add new event"
+msgstr "Yeni etkinlik:"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:197
+#, fuzzy
+msgid "Sync with google calendar"
+msgstr "Google Takvim için bir gösterge"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:198
+msgid "Show Calendar"
+msgstr "Takvimi Göster"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:199
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:60
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendardialog.py:80
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:201
+msgid "Help"
+msgstr "Yardım"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:204
+msgid "Exit"
+msgstr "Çıkış"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:229
+msgid "New event:"
+msgstr "Yeni etkinlik:"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:238
+msgid "Event finished:"
+msgstr "Etkinlik sona erdi:"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:267
+msgid "In Launchpad"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:268
+msgid "Get help online..."
+msgstr "Çevrimiçi yardım alın..."
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:269
+msgid "Translate this application..."
+msgstr "Bu uygulamanın çevirisini yapın..."
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:270
+msgid "Report a bug..."
+msgstr "Bir hata bildir...."
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:272
+msgid "Homepage"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:273
+msgid "Follow us in Twitter"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:274
+msgid "Follow us in Google+"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:275
+msgid "Follow us in Facebook"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:277
+msgid "About"
+msgstr "Hakkında"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:315
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:95
+msgid "Are you sure you want to revove this event?"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:336
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:115
+msgid "Are you sure you want to edit this event?"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarindicator.py:392
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:37
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:38
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:39
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:40
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:41
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:42
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:43
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:44
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:45
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:46
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:47
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:48
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:49
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:50
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:51
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:52
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:53
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:54
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:55
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:56
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:57
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:58
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:59
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:60
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:61
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:93
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:94
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:95
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:96
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:97
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:98
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:110
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:111
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:112
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:113
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:114
+msgid "An indicator for Google Calendar"
+msgstr "Google Takvim için bir gösterge"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/eventwindow.py:42
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addeventwindow.py:42
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:167
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:108
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addcalendarwindow.py:93
+msgid "Calendar"
+msgstr "Takvim"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/eventwindow.py:86
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addeventwindow.py:62
+#, fuzzy
+msgid "To calendar"
+msgstr "Takvimi Göster"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/eventwindow.py:101
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addeventwindow.py:77
+msgid "Title"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/eventwindow.py:109
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addeventwindow.py:85
+msgid "All day event"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/eventwindow.py:117
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addeventwindow.py:93
+msgid "Start date"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/eventwindow.py:128
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addeventwindow.py:104
+msgid "End date"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/eventwindow.py:139
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addeventwindow.py:115
+msgid "Description"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:47
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
+msgid "Monday"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:47
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
+msgid "Tuesday"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:47
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
+msgid "Wednesday"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:47
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
+msgid "Thursday"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:47
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
+msgid "Friday"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:47
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
+msgid "Saturday"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:47
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
+msgid "Sunday"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:186
+msgid "One year less"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:193
+msgid "One month less"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:203
+msgid "One month more"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:210
+msgid "One year more"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:225
+msgid "Today"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/calendarwindow.py:234
+msgid "Close"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:75
+msgid "Login"
+msgstr "Oturum aç"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:83
+msgid "Allow access to Google Calendar"
+msgstr "Goole Takvim erişimi"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:93
+#, fuzzy
+msgid "Calendar options"
+msgstr "Takvim"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:110
+msgid "Background color"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:112
+msgid "Text color"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:116
+#, fuzzy
+msgid "Show calendar"
+msgstr "Takvimi Göster"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:121
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/addcalendarwindow.py:113
+#, fuzzy
+msgid "Calendar name"
+msgstr "Takvim"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:126
+msgid "Options"
+msgstr "Seçenekler"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:133
+msgid "Time between autommatic syncronizations (hours)"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:142
+msgid "Autostart"
+msgstr "Kendiliğinden Başlat"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:149
+msgid "Theme light"
+msgstr "Tema ışığı"
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:185
+msgid "Select background color"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:192
+msgid "Select foreground color"
+msgstr ""
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/src/preferences_dialog.py:216
+#, fuzzy
+msgid ""
+"You have to authorize Calendar-Indicator to use it, do you want to "
+"authorize?"
+msgstr ""
+"Takvim gösterge uygulamasının çalışması için Goole Takvim erişimine izin "
+"vermelisiniz."
+
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:12
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:13
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:14
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:15
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:16
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:17
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:18
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:19
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:20
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:21
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:22
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:23
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:24
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:25
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:26
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:27
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:28
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:29
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:30
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:31
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:32
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:33
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:34
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:35
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:36
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:62
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:63
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:64
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:65
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:66
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:67
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:68
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:69
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:70
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:71
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:72
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:73
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:74
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:75
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:76
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:77
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:78
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:79
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:80
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:81
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:82
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:83
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:84
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:85
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:86
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:87
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:88
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:89
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:90
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:91
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:92
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:99
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:100
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:101
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:102
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:103
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:104
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:105
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:106
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:107
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:108
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:109
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:115
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:116
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:117
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:118
+#: /home/atareao/Copy/PROGRAMACION/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:119
+#, fuzzy
+msgid "Calendar-Indicator"
+msgstr "Takvim"
+
+#~ msgid "Time between updates"
+#~ msgstr "Güncellemeler arasındaki süre"
+
+#~ msgid "Refresh"
+#~ msgstr "Yenile"
+
+#~ msgid "Web..."
+#~ msgstr "Web..."
