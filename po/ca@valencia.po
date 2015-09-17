@@ -1,17 +1,17 @@
-# French translation for calendar-indicator
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Catalan (Valencian) translation for calendar-indicator
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
 # This file is distributed under the same license as the calendar-indicator package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: calendar-indicator 0.3.3\n"
 "Report-Msgid-Bugs-To: lorenzo.carbonell.cerezo@gmail.com\n"
 "POT-Creation-Date: 2015-09-17 21:45+0200\n"
-"PO-Revision-Date: 2013-11-04 18:03+0000\n"
-"Last-Translator: Deuchnord <Unknown>\n"
-"Language-Team: French <fr@li.org>\n"
-"Language: fr\n"
+"PO-Revision-Date: 2015-05-10 10:28+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Catalan (Valencian) <ca@valencia@li.org>\n"
+"Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,7 +69,7 @@ msgstr ""
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:108
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:42
 msgid "Calendar"
-msgstr "Agenda"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:191
 msgid "One year less"
@@ -97,15 +97,13 @@ msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:113
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:121
-#, fuzzy
 msgid "Calendar name"
-msgstr "Agenda"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addeventwindow.py:62
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:86
-#, fuzzy
 msgid "To calendar"
-msgstr "Montrer l'agenda"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addeventwindow.py:77
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:101
@@ -136,20 +134,19 @@ msgstr ""
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:202
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendardialog.py:80
 msgid "Preferences"
-msgstr "Préférences"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:75
 msgid "Login"
-msgstr "Identifiant"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:83
 msgid "Allow access to Google Calendar"
-msgstr "Autoriser l'accès à Google Agenda"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:93
-#, fuzzy
 msgid "Calendar options"
-msgstr "Agenda"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:110
 msgid "Background color"
@@ -160,13 +157,12 @@ msgid "Text color"
 msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:116
-#, fuzzy
 msgid "Show calendar"
-msgstr "Montrer l'agenda"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:126
 msgid "Options"
-msgstr "Paramètres"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:133
 msgid "Time between automatic syncronizations (hours)"
@@ -174,11 +170,11 @@ msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:142
 msgid "Autostart"
-msgstr "Démarrage automatique"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:149
 msgid "Theme light"
-msgstr "Thème clair"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:185
 msgid "Select background color"
@@ -189,57 +185,48 @@ msgid "Select foreground color"
 msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:216
-#, fuzzy
 msgid ""
 "You have to authorize Calendar-Indicator to use it, do you want to "
 "authorize?"
 msgstr ""
-"Vous devez autoriser à Calendar-Indicator l'accès à Google Agenda pour "
-"fonctionner"
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:143
-#, fuzzy
 msgid ""
 "You have to authorize Calendar-Indicator to manage your Google Calendar.\n"
 " Do you want to authorize?"
 msgstr ""
-"Vous devez autoriser à Calendar-Indicator l'accès à Google Agenda pour "
-"fonctionner"
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:197
-#, fuzzy
 msgid "Add new calendar"
-msgstr "Montrer l'agenda"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:198
-#, fuzzy
 msgid "Add new event"
-msgstr "Nouvel évènement :"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:200
-#, fuzzy
 msgid "Sync with google calendar"
-msgstr "Un indicateur pour Google Agenda"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:201
 msgid "Show Calendar"
-msgstr "Montrer l'agenda"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:204
 msgid "Help"
-msgstr "Aide"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:207
 msgid "Exit"
-msgstr "Quitter"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:233
 msgid "New event:"
-msgstr "Nouvel évènement :"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:242
 msgid "Event finished:"
-msgstr "Évènement terminé :"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:271
 msgid "In Launchpad"
@@ -247,15 +234,15 @@ msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:272
 msgid "Get help online..."
-msgstr "Obtenir de l'aide en ligne..."
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:273
 msgid "Translate this application..."
-msgstr "Traduire cette application..."
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:274
 msgid "Report a bug..."
-msgstr "Signaler un bogue..."
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:276
 msgid "Homepage"
@@ -275,7 +262,7 @@ msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:281
 msgid "About"
-msgstr "À propos"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:396
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:37
@@ -316,7 +303,7 @@ msgstr "À propos"
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:114
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:121
 msgid "An indicator for Google Calendar"
-msgstr "Un indicateur pour Google Agenda"
+msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:12
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:13
@@ -392,15 +379,5 @@ msgstr "Un indicateur pour Google Agenda"
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:119
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:120
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:122
-#, fuzzy
 msgid "Calendar-Indicator"
-msgstr "Agenda"
-
-#~ msgid "Time between updates"
-#~ msgstr "Délai entre les mises à jour"
-
-#~ msgid "Refresh"
-#~ msgstr "Actualiser"
-
-#~ msgid "Web..."
-#~ msgstr "Sur Internet..."
+msgstr ""

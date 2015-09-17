@@ -117,4 +117,7 @@ $GenericName[vi] = _('Calendar-Indicator')
 $GenericName[be] = _('Calendar-Indicator')
 $GenericName[ja] = _('Calendar-Indicator')
 $GenericName[is] = _('Calendar-Indicator')
+$Name[ca@valencia] = _('Calendar-Indicator')
+$Comment[ca@valencia] = _('An indicator for Google Calendar')
+$GenericName[ca@valencia] = _('Calendar-Indicator')
 

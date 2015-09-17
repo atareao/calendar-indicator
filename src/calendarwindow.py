@@ -56,7 +56,7 @@ class DayWidget(Gtk.EventBox):
 	}	
 	def __init__(self,googlecalendar=None,adate=None, callback = None):		
 		Gtk.EventBox.__init__(self)		
-		self.set_size_request(150, 100)
+		self.set_size_request(135, 70)		
 		box1 = Gtk.Box.new(Gtk.Orientation.VERTICAL,0)
 		self.add(box1)
 		box2 = Gtk.Box.new(Gtk.Orientation.HORIZONTAL,0)
@@ -69,6 +69,7 @@ class DayWidget(Gtk.EventBox):
 		self.treeview = Gtk.TreeView(self.store)
 		self.treeview.connect('button-release-event',self.on_button_released_event)
 		self.column = Gtk.TreeViewColumn('',  Gtk.CellRendererText(), text=0, background=2,foreground=3)
+		self.column.connect('clicked',self.on_column_clicked)
 		self.treeview.append_column(self.column)
 		scrolledwindow.add(self.treeview)
 		if adate is not None:
@@ -76,7 +77,9 @@ class DayWidget(Gtk.EventBox):
 		self.googlecalendar = googlecalendar
 		self.calendars = googlecalendar.calendars.values()
 		self.callback = callback
-		
+	def on_column_clicked(self,widget,key):
+		print('*******************')
+		print(widget,key)
 	def on_button_released_event(self,widget,key):
 		if self.calendars is not None:
 			selection = widget.get_selection()
@@ -123,6 +126,8 @@ class DayWidget(Gtk.EventBox):
 							md.destroy()
 					ew.destroy()
 				selection.unselect_all()
+			else:
+				print(widget)
 	def set_date(self,adate):
 		self.adate = adate
 		self.column.set_title(str(adate.day))
@@ -166,7 +171,7 @@ class CalendarWindow(Gtk.Dialog):
 		
 		title = comun.APPNAME + ' | '+_('Calendar')
 		Gtk.Dialog.__init__(self,title,None,Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT)
-		self.set_size_request(1200, 800)
+		self.set_size_request(1024, 600)
 		self.set_icon_from_file(comun.ICON)
 		self.connect('destroy', self.close_application)
 		self.edited = False

@@ -182,7 +182,10 @@ class CalendarIndicator():
 
 	def create_menu(self):
 		self.menu = Gtk.Menu()
+		self.menu_today = add2menu(self.menu, text = datetime.datetime.now().strftime('%A, %d %B %Y'))
+		add2menu(self.menu)
 		self.menu_events = []
+		
 		for i in range(10):
 			menu_event = EventMenuItem('%s'%i)			
 			menu_event.show()
@@ -223,6 +226,7 @@ class CalendarIndicator():
 		self.indicator.set_attention_icon(starred_icon)		
 		#
 		events2 = self.googlecalendar.getNextTenEvents(self.visible_calendars)
+		self.menu_today.set_label(now.strftime('%A, %d %B %Y'))
 		if check and len(self.events)>0:
 			for event in events2:
 				if not is_event_in_events(event,self.events):
@@ -236,7 +240,7 @@ class CalendarIndicator():
 			for event in self.events:
 				if not is_event_in_events(event,events2):
 					msg = _('Event finished:') + '\n'
-					if 'summary' in event.keys:
+					if 'summary' in event.keys():
 						msg += event.get_start_date_string()+' - '+event['summary']
 					else:
 						msg += event.get_start_date_string()
