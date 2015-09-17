@@ -2,8 +2,9 @@ calendar-indicator (0.3.3-0extras15.04.0) vivid; urgency=medium
 
   * Added current day as item in the menu
   * Fixed a bug 
+  * Updated translations
 
- -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Thu, 17 Sep 2015 21:34:34 +0200
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Thu, 17 Sep 2015 21:47:45 +0200
 
 calendar-indicator (0.3.2-0extras14.04.0) vivid; urgency=medium
 
