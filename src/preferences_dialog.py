@@ -40,13 +40,29 @@ gettext.bindtextdomain(comun.APP, comun.LANGDIR)
 gettext.textdomain(comun.APP)
 _ = gettext.gettext
 
-def tohex(val):
+def tohex():
 	val = '%x'%random.randint(0, 16777215)
 	oval = val
 	if len(val[1:])<6:		
 		val = '#'+(6-len(val[1:]))*'0'+val[1:]
-	print(oval,val)
 	return val
+
+def hex_to_rgb(value):
+    value = value.lstrip('#')
+    lv = len(value)
+    return tuple(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
+
+def rgb_to_hex(rgb):
+    return '#%02x%02x%02x' % rgb
+
+def contraste(hexvalue):
+	r,g,b = hex_to_rgb(hexvalue)
+	a =1 - ( 0.299 * r + 0.587 * g + 0.114 * b)/255.
+	if a < 0.5:
+		d = 0
+	else:
+		d = 255
+	return  rgb_to_hex((d,d,d))
 
 def get_calendar_from_options(calendars_options,calendar_id):
 	for calendar_options in calendars_options:
@@ -222,7 +238,9 @@ class Preferences(Gtk.Dialog):
 			self.switch1.set_active(True)
 			self.store.clear()
 			for calendar in googlecalendar.get_calendars().values():
-				self.store.append([calendar['summary'],tohex(random.randint(0, 16777215)),tohex(random.randint(0, 16777215)),calendar['id'],True,calendar['summary']])
+				background = tohex()
+				foreground = contraste(background)
+				self.store.append([calendar['summary'],background,foreground,calendar['id'],True,calendar['summary']])
 		
 	def load_preferences(self):
 		self.switch1.set_active(os.path.exists(comun.TOKEN_FILE))
@@ -256,8 +274,8 @@ class Preferences(Gtk.Dialog):
 					else:
 						calendar_name = calendar['summary']
 				else:
-					background_color = tohex(random.randint(0, 16777215))
-					foreground_color = tohex(random.randint(0, 16777215))
+					background_color = tohex()
+					foreground_color = contraste(background_color)
 					visible = True
 					calendar_name = calendar['summary']
 				self.store.append([calendar['summary'],background_color,foreground_color,calendar['id'],visible,calendar_name])

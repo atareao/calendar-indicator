@@ -2,19 +2,19 @@
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the calendar-indicator package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: calendar-indicator 0.3.3\n"
+"Project-Id-Version: calendar-indicator 0.3.4\n"
 "Report-Msgid-Bugs-To: lorenzo.carbonell.cerezo@gmail.com\n"
-"POT-Creation-Date: 2015-09-17 21:45+0200\n"
+"POT-Creation-Date: 2016-01-18 21:25+0100\n"
 "PO-Revision-Date: 2012-10-04 22:49+0000\n"
 "Last-Translator: Štefan Lučivjanský <stefan.lucivjansky@gmail.com>\n"
 "Language-Team: Slovak <sk@li.org>\n"
-"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sk\n"
 "X-Generator: Launchpad (build 17737)\n"
 "X-Launchpad-Export-Date: 2015-09-17 19:36+0000\n"
 
@@ -66,7 +66,7 @@ msgstr ""
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:172
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:93
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addeventwindow.py:42
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:108
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:124
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:42
 msgid "Calendar"
 msgstr "Kalendár"
@@ -96,7 +96,7 @@ msgid "Close"
 msgstr ""
 
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:113
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:121
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:137
 #, fuzzy
 msgid "Calendar name"
 msgstr "Kalendár"
@@ -132,63 +132,63 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:60
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:76
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:202
 #: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendardialog.py:80
 msgid "Preferences"
 msgstr "Nastavenia"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:75
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:91
 msgid "Login"
 msgstr "Prihlásenie"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:83
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:99
 msgid "Allow access to Google Calendar"
 msgstr "Povoliť prístup do Google Kalendár"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:93
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:109
 #, fuzzy
 msgid "Calendar options"
 msgstr "Kalendár"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:110
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:126
 msgid "Background color"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:112
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:128
 msgid "Text color"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:116
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:132
 #, fuzzy
 msgid "Show calendar"
 msgstr "Zobraziť kalendár"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:126
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:142
 msgid "Options"
 msgstr "Možnosti"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:133
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:149
 msgid "Time between automatic syncronizations (hours)"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:142
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:158
 msgid "Autostart"
 msgstr "Automatické spustenie"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:149
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:165
 msgid "Theme light"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:185
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:201
 msgid "Select background color"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:192
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:208
 msgid "Select foreground color"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:216
+#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:232
 #, fuzzy
 msgid ""
 "You have to authorize Calendar-Indicator to use it, do you want to "
