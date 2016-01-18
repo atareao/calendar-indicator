@@ -468,9 +468,10 @@ class GoogleCalendar(GoogleService):
 		lookinevents = []
 		adatetime = datetime.datetime.now(LocalTZ())
 		for calendar_id in calendar_ids:
-			some_events = self.calendars[calendar_id]['events'].values()
-			if some_events:
-				lookinevents.extend(some_events)
+			if calendar_id in self.calendars.keys() and 'events' in self.calendars[calendar_id]:
+				some_events = self.calendars[calendar_id]['events'].values()
+				if some_events:
+					lookinevents.extend(some_events)
 		for event in lookinevents:
 			sd = event.get_start_date()
 			#print(event.get_start_date())
