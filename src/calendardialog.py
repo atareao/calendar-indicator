@@ -45,7 +45,7 @@ def get_date(event,start=True):
 		key = 'start'
 	else:
 		key = 'end'
-	if 'dateTime' in event[key]:		
+	if 'dateTime' in event[key]:
 		return event[key]['dateTime']
 	else:
 		return event[key]['date']
@@ -81,7 +81,7 @@ class CalendarDialog(Gtk.Dialog):
 		Gtk.Dialog.__init__(self,title,parent,Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,(Gtk.STOCK_OK, Gtk.ResponseType.ACCEPT,Gtk.STOCK_CANCEL,Gtk.ResponseType.CANCEL))
 		self.set_default_size(50, 450)
 		self.set_resizable(False)
-		#self.set_icon_from_file(comun.ICON)		
+		#self.set_icon_from_file(comun.ICON)
 		self.connect('destroy', self.close_application)
 		#
 		vbox0 = Gtk.VBox(spacing = 5)
@@ -121,7 +121,7 @@ class CalendarDialog(Gtk.Dialog):
 					dia = getDay(get_date(event))
 					self.selecteds[int(dia)] = event['summary']
 			self._mark_days()
-			
+
 	def _unmark_days(self):
 		for key in self.selecteds.keys():
 			self.calendar.unmark_day(key)
@@ -132,7 +132,7 @@ class CalendarDialog(Gtk.Dialog):
 			self.calendar.mark_day(key)
 	def _clear_marks(self):
 		self.calendar.clear_marks()
-			
+
 	def close_application(self,widget):
 		self.ok = False
 		self.hide()
@@ -141,4 +141,3 @@ if __name__ == "__main__":
 	cd = CalendarDialog('')
 	cd.run()
 	exit(0)
-		
