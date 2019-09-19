@@ -1,11 +1,9 @@
-#! /usr/bin/python3
-# -*- coding: iso-8859-15 -*-
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 #
-__author__='atareao'
-__date__ ='$19/02/2012$'
+# Calendar-Indicator
 #
-#
-# Copyright (C) 2011,2012 Lorenzo Carbonell
+# Copyright (C) 2011-2019 Lorenzo Carbonell Cerezo
 # lorenzo.carbonell.cerezo@gmail.com
 #
 # This program is free software: you can redistribute it and/or modify
@@ -20,9 +18,6 @@ __date__ ='$19/02/2012$'
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
-#
 
 from gi.repository import Gtk
 import datetime

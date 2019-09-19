@@ -1,12 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-__author__="atareao"
-__date__ ="$29-ene-2011$"
+# Calendar-Indicator
 #
-# com.py
-#
-# Copyright (C) 2011 Lorenzo Carbonell
+# Copyright (C) 2011-2019 Lorenzo Carbonell Cerezo
 # lorenzo.carbonell.cerezo@gmail.com
 #
 # This program is free software: you can redistribute it and/or modify
@@ -21,15 +18,6 @@ __date__ ="$29-ene-2011$"
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
-#
-__author__ = 'Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>'
-__date__ ='$24/09/2011'
-__copyright__ = 'Copyright (c) 2011 Lorenzo Carbonell'
-__license__ = 'GPLV3'
-__url__ = 'http://www.atareao.es'
-__version__ = '0.1.0.8.quantal.1'
 
 import os
 import locale

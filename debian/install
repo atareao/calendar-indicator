@@ -1,0 +1,8 @@
+bin/* /opt/extras.ubuntu.com/calendar-indicator/bin
+src/*.py /opt/extras.ubuntu.com/calendar-indicator/share/calendar-indicator
+debian/changelog /opt/extras.ubuntu.com/calendar-indicator/share/calendar-indicator
+data/social/*.svg /opt/extras.ubuntu.com/calendar-indicator/share/calendar-indicator/social
+data/icons/*.svg /opt/extras.ubuntu.com/calendar-indicator/share/calendar-indicator/icons
+data/icons/calendar-indicator.svg /opt/extras.ubuntu.com/calendar-indicator/share/pixmaps
+data/calendar-indicator-autostart.desktop /opt/extras.ubuntu.com/calendar-indicator/share/calendar-indicator
+data/extras-calendar-indicator.desktop /usr/share/applications

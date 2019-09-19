@@ -1,8 +1,8 @@
-calendar-indicator (0.3.4-0extras15.10.0) wily; urgency=medium
+calendar-indicator (0.3.4-0extras16.04.0) xenial; urgency=medium
 
   * Fixed a bug with empty calendars
 
- -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Mon, 18 Jan 2016 20:08:55 +0100
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Thu, 29 Dec 2016 19:47:07 +0100
 
 calendar-indicator (0.3.3-0extras15.04.0) vivid; urgency=medium
 

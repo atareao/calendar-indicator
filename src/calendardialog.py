@@ -1,12 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-__author__='atareao'
-__date__ ='$06-jun-2010 12:34:44$'
+# Calendar-Indicator
 #
-# <one line to give the program's name and a brief idea of what it does.>
-#
-# Copyright (C) 2010 Lorenzo Carbonell
+# Copyright (C) 2011-2019 Lorenzo Carbonell Cerezo
 # lorenzo.carbonell.cerezo@gmail.com
 #
 # This program is free software: you can redistribute it and/or modify
@@ -21,9 +18,7 @@ __date__ ='$06-jun-2010 12:34:44$'
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
-#
+
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk

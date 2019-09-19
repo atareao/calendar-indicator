@@ -1,10 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
+# Calendar-Indicator
 #
-# services.py
-#
-# Copyright (C) 2012-2016 Lorenzo Carbonell
+# Copyright (C) 2011-2019 Lorenzo Carbonell Cerezo
 # lorenzo.carbonell.cerezo@gmail.com
 #
 # This program is free software: you can redistribute it and/or modify
@@ -19,9 +18,6 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
-#
 
 import requests
 import json
