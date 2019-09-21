@@ -6,391 +6,259 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: calendar-indicator 0.3.4\n"
-"Report-Msgid-Bugs-To: lorenzo.carbonell.cerezo@gmail.com\n"
-"POT-Creation-Date: 2016-01-18 21:25+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-21 18:22+0200\n"
 "PO-Revision-Date: 2012-10-15 12:16+0000\n"
 "Last-Translator: Wang Dianjin <Unknown>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "X-Generator: Launchpad (build 17737)\n"
 "X-Launchpad-Export-Date: 2015-09-17 19:36+0000\n"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:47
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
-msgid "Monday"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:47
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
-msgid "Tuesday"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:47
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
-msgid "Wednesday"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:47
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
-msgid "Thursday"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:47
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
-msgid "Friday"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:47
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
-msgid "Saturday"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:47
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:43
-msgid "Sunday"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:98
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:319
-msgid "Are you sure you want to revove this event?"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:118
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:340
-msgid "Are you sure you want to edit this event?"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:172
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:93
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addeventwindow.py:42
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:124
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:42
+#: src/addeventwindow.py:40 src/calendarwindow.py:196 src/eventwindow.py:42
+#: src/preferences_dialog.py:98 src/addcalendarwindow.py:93
 msgid "Calendar"
 msgstr "日历"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:191
-msgid "One year less"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:198
-msgid "One month less"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:208
-msgid "One month more"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:215
-msgid "One year more"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:230
-msgid "Today"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarwindow.py:239
-msgid "Close"
-msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addcalendarwindow.py:113
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:137
-#, fuzzy
-msgid "Calendar name"
-msgstr "日历"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addeventwindow.py:62
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:86
+#: src/addeventwindow.py:60 src/eventwindow.py:87
 #, fuzzy
 msgid "To calendar"
 msgstr "显示日历"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addeventwindow.py:77
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:101
+#: src/addeventwindow.py:75 src/eventwindow.py:102
 msgid "Title"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addeventwindow.py:85
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:109
+#: src/addeventwindow.py:83 src/eventwindow.py:110
 msgid "All day event"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addeventwindow.py:93
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:117
+#: src/addeventwindow.py:91 src/eventwindow.py:118
 msgid "Start date"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addeventwindow.py:104
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:128
+#: src/addeventwindow.py:102 src/eventwindow.py:129
 msgid "End date"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/addeventwindow.py:115
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/eventwindow.py:139
+#: src/addeventwindow.py:113 src/eventwindow.py:140
 msgid "Description"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:76
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:202
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendardialog.py:80
-msgid "Preferences"
-msgstr "首选项"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:91
-msgid "Login"
-msgstr "登陆"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:99
-msgid "Allow access to Google Calendar"
-msgstr "允许访问谷歌日历"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:109
-#, fuzzy
-msgid "Calendar options"
-msgstr "日历"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:126
-msgid "Background color"
+#: src/calendarwindow.py:47 src/addcalendarwindow.py:40
+msgid "Monday"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:128
-msgid "Text color"
+#: src/calendarwindow.py:47 src/addcalendarwindow.py:40
+msgid "Tuesday"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:132
-#, fuzzy
-msgid "Show calendar"
-msgstr "显示日历"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:142
-msgid "Options"
-msgstr "选项"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:149
-msgid "Time between automatic syncronizations (hours)"
+#: src/calendarwindow.py:47 src/addcalendarwindow.py:40
+msgid "Wednesday"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:158
-msgid "Autostart"
-msgstr "开机启动"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:165
-msgid "Theme light"
-msgstr "浅色主题"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:201
-msgid "Select background color"
+#: src/calendarwindow.py:47 src/addcalendarwindow.py:40
+msgid "Thursday"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:208
-msgid "Select foreground color"
+#: src/calendarwindow.py:48 src/addcalendarwindow.py:41
+msgid "Friday"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/preferences_dialog.py:232
-#, fuzzy
-msgid ""
-"You have to authorize Calendar-Indicator to use it, do you want to "
-"authorize?"
-msgstr "您必须允许 Calendar 指示器访问您的谷歌日历才能工作"
+#: src/calendarwindow.py:48 src/addcalendarwindow.py:41
+msgid "Saturday"
+msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:143
+#: src/calendarwindow.py:48 src/addcalendarwindow.py:41
+msgid "Sunday"
+msgstr ""
+
+#: src/calendarwindow.py:110 src/calendarindicator.py:312
+msgid "Are you sure you want to revove this event?"
+msgstr ""
+
+#: src/calendarwindow.py:136 src/calendarindicator.py:333
+msgid "Are you sure you want to edit this event?"
+msgstr ""
+
+#: src/calendarwindow.py:219
+msgid "One year less"
+msgstr ""
+
+#: src/calendarwindow.py:228
+msgid "One month less"
+msgstr ""
+
+#: src/calendarwindow.py:240
+msgid "One month more"
+msgstr ""
+
+#: src/calendarwindow.py:249
+msgid "One year more"
+msgstr ""
+
+#: src/calendarwindow.py:263
+msgid "Today"
+msgstr ""
+
+#: src/calendarwindow.py:277
+msgid "Close"
+msgstr ""
+
+#: src/calendarindicator.py:136
 #, fuzzy
 msgid ""
 "You have to authorize Calendar-Indicator to manage your Google Calendar.\n"
 " Do you want to authorize?"
 msgstr "您必须允许 Calendar 指示器访问您的谷歌日历才能工作"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:197
+#: src/calendarindicator.py:190
 #, fuzzy
 msgid "Add new calendar"
 msgstr "显示日历"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:198
+#: src/calendarindicator.py:191
 #, fuzzy
 msgid "Add new event"
 msgstr "新事件："
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:200
+#: src/calendarindicator.py:193
 #, fuzzy
 msgid "Sync with google calendar"
 msgstr "Google 日历提示器"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:201
+#: src/calendarindicator.py:194
 msgid "Show Calendar"
 msgstr "显示日历"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:204
+#: src/calendarindicator.py:195 src/preferences_dialog.py:50
+#: src/calendardialog.py:70
+msgid "Preferences"
+msgstr "首选项"
+
+#: src/calendarindicator.py:197
 msgid "Help"
 msgstr "帮助"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:207
+#: src/calendarindicator.py:200
 msgid "Exit"
 msgstr "退出"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:233
+#: src/calendarindicator.py:226
 msgid "New event:"
 msgstr "新事件："
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:242
+#: src/calendarindicator.py:235
 msgid "Event finished:"
 msgstr "事件结束："
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:271
+#: src/calendarindicator.py:264
 msgid "In Launchpad"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:272
+#: src/calendarindicator.py:265
 msgid "Get help online..."
 msgstr "获得在线帮助"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:273
+#: src/calendarindicator.py:266
 msgid "Translate this application..."
 msgstr "翻译此程序..."
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:274
+#: src/calendarindicator.py:267
 msgid "Report a bug..."
 msgstr "报告 Bug..."
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:276
+#: src/calendarindicator.py:269
 msgid "Homepage"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:277
+#: src/calendarindicator.py:270
 msgid "Follow us in Twitter"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:278
+#: src/calendarindicator.py:271
 msgid "Follow us in Google+"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:279
+#: src/calendarindicator.py:272
 msgid "Follow us in Facebook"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:281
+#: src/calendarindicator.py:274
 msgid "About"
 msgstr "关于"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/src/calendarindicator.py:396
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:37
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:38
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:39
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:40
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:41
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:42
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:43
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:44
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:45
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:46
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:47
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:48
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:49
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:50
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:51
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:52
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:53
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:54
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:55
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:56
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:57
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:58
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:59
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:60
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:61
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:93
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:94
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:95
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:96
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:97
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:98
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:110
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:111
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:112
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:113
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:114
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:121
+#: src/calendarindicator.py:389
 msgid "An indicator for Google Calendar"
 msgstr "Google 日历提示器"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:12
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:13
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:14
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:15
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:16
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:17
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:18
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:19
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:20
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:21
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:22
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:23
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:24
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:25
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:26
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:27
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:28
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:29
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:30
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:31
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:32
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:33
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:34
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:35
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:36
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:62
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:63
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:64
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:65
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:66
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:67
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:68
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:69
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:70
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:71
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:72
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:73
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:74
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:75
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:76
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:77
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:78
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:79
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:80
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:81
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:82
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:83
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:84
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:85
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:86
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:87
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:88
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:89
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:90
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:91
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:92
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:99
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:100
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:101
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:102
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:103
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:104
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:105
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:106
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:107
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:108
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:109
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:115
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:116
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:117
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:118
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:119
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:120
-#: /home/lorenzo/CloudStation/Programacion/Python/trusty/calendar-indicator/extras-calendar-indicator.desktop.in:122
+#: src/preferences_dialog.py:65
+msgid "Login"
+msgstr "登陆"
+
+#: src/preferences_dialog.py:73
+msgid "Allow access to Google Calendar"
+msgstr "允许访问谷歌日历"
+
+#: src/preferences_dialog.py:83
 #, fuzzy
-msgid "Calendar-Indicator"
+msgid "Calendar options"
 msgstr "日历"
+
+#: src/preferences_dialog.py:100
+msgid "Background color"
+msgstr ""
+
+#: src/preferences_dialog.py:102
+msgid "Text color"
+msgstr ""
+
+#: src/preferences_dialog.py:106
+#, fuzzy
+msgid "Show calendar"
+msgstr "显示日历"
+
+#: src/preferences_dialog.py:111 src/addcalendarwindow.py:113
+#, fuzzy
+msgid "Calendar name"
+msgstr "日历"
+
+#: src/preferences_dialog.py:116
+msgid "Options"
+msgstr "选项"
+
+#: src/preferences_dialog.py:123
+msgid "Time between automatic syncronizations (hours)"
+msgstr ""
+
+#: src/preferences_dialog.py:132
+msgid "Autostart"
+msgstr "开机启动"
+
+#: src/preferences_dialog.py:139
+msgid "Theme light"
+msgstr "浅色主题"
+
+#: src/preferences_dialog.py:175
+msgid "Select background color"
+msgstr ""
+
+#: src/preferences_dialog.py:182
+msgid "Select foreground color"
+msgstr ""
+
+#: src/preferences_dialog.py:206
+#, fuzzy
+msgid ""
+"You have to authorize Calendar-Indicator to use it, do you want to authorize?"
+msgstr "您必须允许 Calendar 指示器访问您的谷歌日历才能工作"
+
+#, fuzzy
+#~ msgid "Calendar-Indicator"
+#~ msgstr "日历"
 
 #~ msgid "Time between updates"
 #~ msgstr "更新间隔"

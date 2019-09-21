@@ -28,8 +28,6 @@ except Exception as e:
     exit(-1)
 from gi.repository import Gtk
 from gi.repository import Gdk
-import locale
-import gettext
 import datetime
 import comun
 from comboboxcalendar import ComboBoxCalendar

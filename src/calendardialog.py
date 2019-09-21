@@ -86,8 +86,20 @@ class CalendarDialog(Gtk.Dialog):
         self.calendar.connect('day-selected',self.on_day_selected)
         vbox0.add(self.calendar)
         self.on_month_changed(self)
+
+        self.init_headerbar()
         #
         self.show_all()
+
+    def init_headerbar(self):
+        self.control = {}
+        self.menu_selected = 'suscriptions'
+        #
+        hb = Gtk.HeaderBar()
+        hb.set_show_close_button(True)
+        hb.props.title = comun.APPNAME
+        self.set_titlebar(hb)
+
     def on_day_selected(self,widget):
         date = self.calendar.get_date()
         print('day -> %s' %(date[2]))

@@ -23,6 +23,8 @@ import gi
 try:
     gi.require_version('Gtk', '3.0')
     gi.require_version('Gdk', '3.0')
+    gi.require_version('Gio', '2.0')
+    gi.require_version('GLib', '2.0')
     gi.require_version('GObject', '2.0')
     gi.require_version('GdkPixbuf', '2.0')
 except Exception as e:
@@ -31,6 +33,8 @@ except Exception as e:
 from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import GObject
+from gi.repository import Gio
+from gi.repository import GLib
 from gi.repository import GdkPixbuf
 import os
 import shutil
@@ -43,6 +47,10 @@ from preferences_dialog import get_calendar_from_options
 import comun
 from comun import _
 from utils import tohex, hex_to_rgb, rgb_to_hex, contraste
+
+
+DEFAULT_CURSOR = Gdk.Cursor(Gdk.CursorType.ARROW)
+WAIT_CURSOR = Gdk.Cursor(Gdk.CursorType.WATCH)
 
 DAY_OF_WEEK = [_('Monday'), _('Tuesday'), _('Wednesday'), _('Thursday'),
                _('Friday'), _('Saturday'), _('Sunday')]
@@ -203,90 +211,20 @@ class CalendarWindow(Gtk.Dialog):
         self.set_icon_from_file(comun.ICON)
         self.connect('destroy', self.close_application)
         self.edited = False
-        #
+
         vbox0 = Gtk.VBox(spacing=5)
         vbox0.set_border_width(5)
         self.get_content_area().pack_start(vbox0, True, True, 0)
-        #
-        frame0 = Gtk.Frame()
-        vbox0.pack_start(frame0, False, False, 0)
-        #
-        hbox1 = Gtk.HBox()
-        frame0.add(hbox1)
-        #
-        button0 = Gtk.Button()
-        button0.set_size_request(40, 40)
-        button0.set_tooltip_text(_('One year less'))
-        button0.set_image(
-            Gtk.Image.new_from_stock(Gtk.STOCK_GOTO_FIRST,
-                                     Gtk.IconSize.BUTTON))
-        button0.connect('clicked', self.on_button0_clicked)
-        hbox1.pack_start(button0, False, False, 0)
-        #
-        button1 = Gtk.Button()
-        button1.set_size_request(40, 40)
-        button1.set_tooltip_text(_('One month less'))
-        button1.set_image(
-            Gtk.Image.new_from_stock(Gtk.STOCK_GO_BACK,
-                                     Gtk.IconSize.BUTTON))
-        button1.connect('clicked', self.on_button1_clicked)
-        hbox1.pack_start(button1, False, False, 0)
-        #
-        self.monthyear = Gtk.Label('Month - Year')
-        hbox1.pack_start(self.monthyear, True, True, 0)
-        #
-        button2 = Gtk.Button()
-        button2.set_size_request(40, 40)
-        button2.set_tooltip_text(_('One month more'))
-        button2.set_image(
-            Gtk.Image.new_from_stock(Gtk.STOCK_GO_FORWARD,
-                                     Gtk.IconSize.BUTTON))
-        button2.connect('clicked', self.on_button2_clicked)
-        hbox1.pack_start(button2, False, False, 0)
-        #
-        button3 = Gtk.Button()
-        button3.set_size_request(40, 40)
-        button3.set_tooltip_text(_('One year more'))
-        button3.set_image(
-            Gtk.Image.new_from_stock(Gtk.STOCK_GOTO_LAST,
-                                     Gtk.IconSize.BUTTON))
-        button3.connect('clicked', self.on_button3_clicked)
-        hbox1.pack_start(button3, False, False, 0)
+
         frame1 = Gtk.Frame()
         vbox0.pack_start(frame1, True, True, 0)
-        #
-        hbox2 = Gtk.HBox()
-        vbox0.pack_start(hbox2, False, False, 0)
-        #
-        button4 = Gtk.Button()
-        button4.set_size_request(40, 40)
-        button4.set_tooltip_text(_('Today'))
-        image = Gtk.Image()
-        image.set_from_pixbuf(
-            GdkPixbuf.Pixbuf.new_from_file_at_size(
-                os.path.join(
-                    comun.ICONDIR,
-                    '%s-light-normal.svg' % (
-                        datetime.datetime.now().day)), 35, 35))
-        button4.set_image(image)
-        button4.connect('clicked', self.on_button4_clicked)
-        hbox2.pack_start(button4, False, False, 0)
-        #
-        button5 = Gtk.Button()
-        button5.set_size_request(40, 40)
-        button5.set_tooltip_text(_('Close'))
-        button5.set_image(
-            Gtk.Image.new_from_stock(Gtk.STOCK_OK,
-                                     Gtk.IconSize.BUTTON))
-        button5.connect('clicked', self.on_button5_clicked)
-        hbox2.pack_end(button5, False, False, 0)
-        #
+
         scrolledwindow = Gtk.ScrolledWindow()
         scrolledwindow.set_policy(Gtk.PolicyType.AUTOMATIC,
                                   Gtk.PolicyType.AUTOMATIC)
         scrolledwindow.set_shadow_type(Gtk.ShadowType.ETCHED_OUT)
         frame1.add(scrolledwindow)
-        #
+
         table1 = Gtk.Table(rows=7, columns=8, homogeneous=False)
         table1.override_background_color(
             Gtk.StateFlags.NORMAL, Gdk.RGBA(1., 1., 1., 0))
@@ -294,7 +232,7 @@ class CalendarWindow(Gtk.Dialog):
         table1.set_col_spacings(2)
         table1.set_row_spacings(2)
         scrolledwindow.add(table1)
-        #
+
         self.days = {}
         self.week_days = {}
         contador = 0
@@ -319,15 +257,64 @@ class CalendarWindow(Gtk.Dialog):
                               xoptions=Gtk.AttachOptions.EXPAND,
                               yoptions=Gtk.AttachOptions.EXPAND)
                 contador += 1
-        #
+
+        self.init_headerbar()
+
         if adate is None:
             self.adate = datetime.datetime.now()
         else:
             self.adate = adate
-        #
+
         self.set_date()
-        #
         self.show_all()
+
+    def init_headerbar(self):
+        self.control = {}
+        self.menu_selected = 'suscriptions'
+
+        self.hb = Gtk.HeaderBar()
+        self.hb.set_show_close_button(True)
+        self.hb.props.title = comun.APPNAME
+        self.set_titlebar(self.hb)
+
+        button0 = Gtk.Button()
+        # button0.set_size_request(40, 40)
+        button0.set_tooltip_text(_('One year less'))
+        button0.set_image(Gtk.Image.new_from_gicon(Gio.ThemedIcon(
+            name='go-first-symbolic'), Gtk.IconSize.BUTTON))
+        button0.connect('clicked', self.on_button0_clicked)
+        self.hb.pack_start(button0)
+
+
+        button1 = Gtk.Button()
+        button1.set_tooltip_text(_('One month less'))
+        button1.set_image(Gtk.Image.new_from_gicon(Gio.ThemedIcon(
+            name='go-previous-symbolic'), Gtk.IconSize.BUTTON))
+        button1.connect('clicked', self.on_button1_clicked)
+        self.hb.pack_start(button1)
+
+        button4 = Gtk.Button()
+        button4.set_size_request(40, 40)
+        button4.set_tooltip_text(_('Today'))
+        button4.set_image(Gtk.Image.new_from_gicon(Gio.ThemedIcon(
+            name='appointment-symbolic'), Gtk.IconSize.BUTTON))
+        button4.connect('clicked', self.on_button4_clicked)
+        self.hb.pack_end(button4)
+
+        button3 = Gtk.Button()
+        button3.set_tooltip_text(_('One year more'))
+        button3.set_image(Gtk.Image.new_from_gicon(Gio.ThemedIcon(
+            name='go-last-symbolic'), Gtk.IconSize.BUTTON))
+        button3.connect('clicked', self.on_button3_clicked)
+        self.hb.pack_end(button3)
+
+        button2 = Gtk.Button()
+        button2.set_tooltip_text(_('One month more'))
+        button2.set_image(Gtk.Image.new_from_gicon(Gio.ThemedIcon(
+            name='go-next-symbolic'), Gtk.IconSize.BUTTON))
+        button2.connect('clicked', self.on_button2_clicked)
+        self.hb.pack_end(button2)
+
 
     def on_edited(self, widget):
         self.edited = True
@@ -339,7 +326,8 @@ class CalendarWindow(Gtk.Dialog):
         self.ok = False
 
     def set_date(self):
-        self.monthyear.set_text(self.adate.strftime('%B - %Y'))
+        GLib.idle_add(self.get_root_window().set_cursor, WAIT_CURSOR)
+        self.hb.props.title = self.adate.strftime('%B - %Y')
         fdom = first_day_of_month(self.adate)
         adate = self.adate.replace(day=1)
         for row in range(1, 7):
@@ -381,6 +369,7 @@ class CalendarWindow(Gtk.Dialog):
                         self.days[contador].clear()
                 else:
                     self.days[contador].clear()
+        GLib.idle_add(self.get_root_window().set_cursor, DEFAULT_CURSOR)
 
     def update(self):
         if self.googlecalendar is not None:

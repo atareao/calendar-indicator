@@ -22,6 +22,7 @@
 import gi
 try:
     gi.require_version('Gtk', '3.0')
+    gi.require_version('Gdk', '3.0')
     gi.require_version('GLib', '2.0')
     gi.require_version('AppIndicator3', '0.1')
     gi.require_version('Notify', '0.7')
@@ -29,6 +30,7 @@ except Exception as e:
     print(e)
     exit(-1)
 from gi.repository import Gtk
+from gi.repository import Gdk
 from gi.repository import GLib
 from gi.repository import AppIndicator3 as appindicator
 from gi.repository import GdkPixbuf
@@ -47,7 +49,77 @@ from googlecalendarapi import GoogleCalendar
 import comun
 from configurator import Configuration
 from preferences_dialog import Preferences
+from utils import get_desktop_environment
 from comun import _
+
+DEFAULT_CURSOR = Gdk.Cursor(Gdk.CursorType.ARROW)
+WAIT_CURSOR = Gdk.Cursor(Gdk.CursorType.WATCH)
+
+if get_desktop_environment() == 'cinnamon':
+    additional_components = ''
+else:
+    additional_components = '#progressbar,\n'
+CSS = '''
+window hdycolumn box list row combobox{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#sidewidget{
+    padding: 10px;
+}
+window hdycolumn box list row{
+    background-color: #ffffff;
+    padding: 2px 8px;
+    margin: 0;
+    border: 1px solid #c3c9d0;
+    border-bottom: 0px;
+    color: #2d2d34;
+}
+window hdycolumn box list row:hover{
+    background-color: #e0e0e1;
+}
+window hdycolumn box list row:selected{
+    background-color: #e0e0e1;
+}
+window hdycolumn box list row:last-child{
+    border-bottom: 1px solid #c3c9d0;
+}
+
+window hdycolumn box list row separator {
+    background-color: #c3c9d0;
+}
+
+#special{
+    font-size: 14px;
+    font-weight:bold;
+    color: #403f38;
+    margin-bottom: 8px;
+}
+
+#label:hover,
+#label{
+    color: rgba(1, 1, 1, 1);
+}
+#label:selected{
+    color: rgba(0, 1, 0, 1);
+}
+%s
+#button:hover,
+#button {
+    border-image: none;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-image: none;
+    border-radius: 0;
+    border-width: 0;
+    border-style: solid;
+    text-shadow: 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 rgba(0, 0, 0, 0), 0 0 rgba(0, 0, 0, 0);
+}
+#button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}''' % (additional_components)
 
 def wait(time_lapse):
     time_start = time.time()
@@ -144,7 +216,9 @@ class CalendarIndicator():
             else:
                 error = False
         self.load_preferences()
-        #
+
+        self.load_css()
+
         self.events = []
         self.create_menu()
         self.sync()
@@ -261,15 +335,14 @@ class CalendarIndicator():
     def get_help_menu(self):
         help_menu =Gtk.Menu()
         #		
-        add2menu(help_menu,text = _('In Launchpad'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://launchpad.net/calendar-indicator'))
-        add2menu(help_menu,text = _('Get help online...'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://answers.launchpad.net/calendar-indicator'))
+        add2menu(help_menu,text = _('GitHub Project'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://github.com/atareao/calendar-indicator'))
+        add2menu(help_menu,text = _('Get help online...'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://github.com/atareao/calendar-indicator/issues'))
         add2menu(help_menu,text = _('Translate this application...'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://translations.launchpad.net/calendar-indicator'))
-        add2menu(help_menu,text = _('Report a bug...'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://bugs.launchpad.net/calendar-indicator'))
+        add2menu(help_menu,text = _('Report a bug...'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://github.com/atareao/calendar-indicator/issues'))
         add2menu(help_menu)
         web = add2menu(help_menu,text = _('Homepage'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('http://www.atareao.es/tag/calendar-indicator'))
-        twitter = add2menu(help_menu,text = _('Follow us in Twitter'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://twitter.com/atareao'))
-        googleplus = add2menu(help_menu,text = _('Follow us in Google+'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://plus.google.com/118214486317320563625/posts'))
-        facebook = add2menu(help_menu,text = _('Follow us in Facebook'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('http://www.facebook.com/elatareao'))
+        twitter = add2menu(help_menu,text = _('Me in Twitter'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://twitter.com/atareao'))
+        githbub = add2menu(help_menu,text = _('Me in GitHub'),conector_event = 'activate',conector_action = lambda x: webbrowser.open('https://github.com/atareao'))
         add2menu(help_menu)
         self.menu_about = add2menu(help_menu,text = _('About'),conector_event = 'activate',conector_action = self.menu_about_response)
         #		
@@ -277,10 +350,8 @@ class CalendarIndicator():
         web.set_always_show_image(True)
         twitter.set_image(Gtk.Image.new_from_file(os.path.join(comun.SOCIALDIR,'twitter.svg')))
         twitter.set_always_show_image(True)
-        googleplus.set_image(Gtk.Image.new_from_file(os.path.join(comun.SOCIALDIR,'googleplus.svg')))
-        googleplus.set_always_show_image(True)
-        facebook.set_image(Gtk.Image.new_from_file(os.path.join(comun.SOCIALDIR,'facebook.svg')))
-        facebook.set_always_show_image(True)
+        githbub.set_image(Gtk.Image.new_from_file(os.path.join(comun.SOCIALDIR,'github.svg')))
+        githbub.set_always_show_image(True)
         #
         help_menu.show()
         return help_menu
@@ -380,12 +451,20 @@ class CalendarIndicator():
     def menu_exit_response(self,widget):
         exit(0)
 
+    def load_css(self):
+        style_provider = Gtk.CssProvider()
+        style_provider.load_from_data(CSS.encode())
+        Gtk.StyleContext.add_provider_for_screen(
+            Gdk.Screen.get_default(),
+            style_provider,
+            Gtk.STYLE_PROVIDER_PRIORITY_USER)
+
     def menu_about_response(self,widget):
         self.set_menu_sensitive(False)
         ad=Gtk.AboutDialog()
         ad.set_name(comun.APPNAME)
         ad.set_version(comun.VERSION)
-        ad.set_copyright('Copyrignt (c) 2011-2014\nLorenzo Carbonell')
+        ad.set_copyright('Copyrignt (c) 2011-2019\nLorenzo Carbonell')
         ad.set_comments(_('An indicator for Google Calendar'))
         ad.set_license(''+
         'This program is free software: you can redistribute it and/or modify it\n'+
