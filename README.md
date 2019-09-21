@@ -9,7 +9,9 @@
   </a>
 </p>
 
-> An indicator for Google Calendar
+> An indicator for Google Calendar for Ubuntu and other Linux distributions
+
+**Calendar Indicator** is a simple application to manage all your calendars from Google Calendar from ypur Linux Desktop.
 
 ### 🏠 [Homepage](https://www.atareao.es/aplicacion/calendar-indicator-o-google-calendar-en-ubuntu/)
 
