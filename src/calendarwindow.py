@@ -19,25 +19,30 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk, Gdk, GObject
+import gi
+try:
+    gi.require_version('Gtk', '3.0')
+    gi.require_version('Gdk', '3.0')
+    gi.require_version('GObject', '2.0')
+    gi.require_version('GdkPixbuf', '2.0')
+except Exception as e:
+    print(e)
+    exit(-1)
+from gi.repository import Gtk
+from gi.repository import Gdk
+from gi.repository import GObject
 from gi.repository import GdkPixbuf
 import os
 import shutil
-import locale
-import gettext
 import datetime
 from configurator import Configuration
 from googlecalendarapi import GoogleCalendar
 from logindialog import LoginDialog
 from eventwindow import EventWindow
 from preferences_dialog import get_calendar_from_options
-
 import comun
-
-locale.setlocale(locale.LC_ALL, '')
-gettext.bindtextdomain(comun.APP, comun.LANGDIR)
-gettext.textdomain(comun.APP)
-_ = gettext.gettext
+from comun import _
+from utils import tohex, hex_to_rgb, rgb_to_hex, contraste
 
 DAY_OF_WEEK = [_('Monday'), _('Tuesday'), _('Wednesday'), _('Thursday'),
                _('Friday'), _('Saturday'), _('Sunday')]
@@ -169,11 +174,9 @@ edit this event?'))
             if calendar_options:
                 background_color = calendar_options['background']
                 foreground_color = calendar_options['foreground']
-                visible = calendar_options['visible']
             else:
-                background_color = tohex(random.randint(0, 16777215))
-                foreground_color = tohex(random.randint(0, 16777215))
-                visible = True
+                background_color = tohex()
+                foreground_color = tohex()
             if event is not None:
                 self.store.append([
                     label, event, background_color, foreground_color])

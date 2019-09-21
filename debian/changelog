@@ -1,3 +1,9 @@
+calendar-indicator (0.3.9-0extras19.04.0ubuntu1) disco; urgency=medium
+
+  * Change to Webkit2
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 21 Sep 2019 07:44:00 +0200
+
 calendar-indicator (0.3.4-0extras16.04.0) xenial; urgency=medium
 
   * Fixed a bug with empty calendars

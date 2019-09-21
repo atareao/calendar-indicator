@@ -19,18 +19,22 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from gi.repository import Gtk, Gdk
+import gi
+try:
+    gi.require_version('Gtk', '3.0')
+    gi.require_version('Gdk', '3.0')
+except Exception as e:
+    print(e)
+    exit(-1)
+from gi.repository import Gtk
+from gi.repository import Gdk
 import locale
 import gettext
 import datetime
 import comun
 from comboboxcalendar import ComboBoxCalendar
 from hourentry import HourEntry
-
-locale.setlocale(locale.LC_ALL, '')
-gettext.bindtextdomain(comun.APP, comun.LANGDIR)
-gettext.textdomain(comun.APP)
-_ = gettext.gettext
+from comun import _
 
 
 class EventWindow(Gtk.Dialog):
@@ -157,7 +161,6 @@ class EventWindow(Gtk.Dialog):
                     break
             if 'summary' in event.keys():
                 self.entry2.set_text(event['summary'])
-            now = datetime.datetime.now()
             if 'date' in event['start'].keys():
                 self.entry3.set_active(True)
                 self.entry5.set_date(event.get_start_date().date())

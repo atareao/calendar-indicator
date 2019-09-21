@@ -19,6 +19,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import gi
+try:
+    gi.require_version('Gtk', '3.0')
+except Exception as e:
+    print(e)
+    exit(-1)
 from gi.repository import Gtk
 import datetime
 
@@ -28,11 +34,13 @@ class HourEntry(Gtk.HBox):
         self.set_no_show_all(True)
         self.hour = Gtk.SpinButton()
         self.hour.set_width_chars(2)
-        self.hour.set_adjustment(Gtk.Adjustment(value=0, lower=0, upper=23, step_incr=1, page_incr=5))
-        self.hour.set_digits(0)		
+        self.hour.set_adjustment(Gtk.Adjustment(value=0, lower=0, upper=23,
+                                 step_incr=1, page_incr=5))
+        self.hour.set_digits(0)
         self.minute = Gtk.SpinButton()
         self.minute.set_width_chars(2)
-        self.minute.set_adjustment(Gtk.Adjustment(value=0, lower=0, upper=59, step_incr=5, page_incr=10))
+        self.minute.set_adjustment(Gtk.Adjustment(value=0, lower=0, upper=59,
+                                   step_incr=5, page_incr=10))
         self.minute.set_digits(0)
         self.pack_start(self.hour, 0, 0, 0)
         self.label = Gtk.Label(':')
@@ -64,4 +72,3 @@ class HourEntry(Gtk.HBox):
     def set_time(self,time):
         self.hour.set_value(time.hour)
         self.minute.set_value(time.minute)
-

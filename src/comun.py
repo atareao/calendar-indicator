@@ -26,7 +26,7 @@ import gettext
 ######################################
 
 def is_package():
-	return not os.path.dirname(os.path.abspath(__file__)).endswith('src')
+    return not os.path.dirname(os.path.abspath(__file__)).endswith('src')
 
 ######################################
 
@@ -39,27 +39,33 @@ BACKUP_FILE = os.path.join(CONFIG_APP_DIR, 'backup')
 TOKEN_FILE = os.path.join(CONFIG_APP_DIR, 'token')
 APPNAME = 'Calendar-Indicator'
 if not os.path.exists(CONFIG_APP_DIR):
-	os.makedirs(CONFIG_APP_DIR)
+    os.makedirs(CONFIG_APP_DIR)
 
 # check if running from source
 if is_package():
-	ROOTDIR = '/opt/extras.ubuntu.com/calendar-indicator/share/'
-	LANGDIR = os.path.join(ROOTDIR, 'locale-langpack')
-	APPDIR = os.path.join(ROOTDIR, APP)
-	ICONDIR = os.path.join(APPDIR, 'icons')
-	SOCIALDIR = os.path.join(APPDIR, 'social')
-	CHANGELOG = os.path.join(APPDIR,'changelog')
+    ROOTDIR = '/opt/extras.ubuntu.com/calendar-indicator/share/'
+    LANGDIR = os.path.join(ROOTDIR, 'locale-langpack')
+    APPDIR = os.path.join(ROOTDIR, APP)
+    ICONDIR = os.path.join(APPDIR, 'icons')
+    SOCIALDIR = os.path.join(APPDIR, 'social')
+    CHANGELOG = os.path.join(APPDIR,'changelog')
 else:
-	ROOTDIR = os.path.dirname(__file__)
-	LANGDIR = os.path.normpath(os.path.join(ROOTDIR, '../template1'))
-	APPDIR = ROOTDIR
-	DATADIR = os.path.normpath(os.path.join(ROOTDIR, '../data'))
-	LOGOSDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/logos'))
-	ICONDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/icons'))
-	IMAGESDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/images'))
-	SOCIALDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/social'))
-	DEBIANDIR = os.path.normpath(os.path.join(ROOTDIR, '../debian'))
-	CHANGELOG = os.path.join(DEBIANDIR,'changelog')
+    ROOTDIR = os.path.dirname(__file__)
+    LANGDIR = os.path.normpath(os.path.join(ROOTDIR, '../template1'))
+    APPDIR = ROOTDIR
+    DATADIR = os.path.normpath(os.path.join(ROOTDIR, '../data'))
+    LOGOSDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/logos'))
+    ICONDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/icons'))
+    IMAGESDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/images'))
+    SOCIALDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/social'))
+    DEBIANDIR = os.path.normpath(os.path.join(ROOTDIR, '../debian'))
+    CHANGELOG = os.path.join(DEBIANDIR,'changelog')
+
+PARAMS = {'version':'',
+          'time':12,
+          'theme':'light',
+          'calendars':[]
+        }
 
 f = open(CHANGELOG,'r')
 line = f.readline()
@@ -68,17 +74,17 @@ pos=line.find('(')
 posf=line.find(')',pos)
 VERSION = line[pos+1:posf].strip()
 if not is_package():
-	VERSION = VERSION + '-src'
+    VERSION = VERSION + '-src'
 
 ICON = os.path.join(ICONDIR,'calendar-indicator.svg')
 ICON_NEW_EVENT = os.path.join(ICONDIR,'event-new.svg')
 ICON_FINISHED_EVENT = os.path.join(ICONDIR,'event-finished.svg')
 
 try:
-	current_locale, encoding = locale.getdefaultlocale()
-	language = gettext.translation(APP, LANGDIR, [current_locale])
-	language.install()
-	_ = language.gettext
+    current_locale, encoding = locale.getdefaultlocale()
+    language = gettext.translation(APP, LANGDIR, [current_locale])
+    language.install()
+    _ = language.gettext
 except Exception as e:
-	print(e)
-	_ = str
+    print(e)
+    _ = str

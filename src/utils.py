@@ -19,36 +19,27 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys
+import random
 
-_login_success = False
-def login():
-  from gobject import MainLoop
-  from dbus.mainloop.glib import DBusGMainLoop
-  from ubuntuone.platform.credentials import CredentialsManagementTool
+def tohex():
+    val = '%x'%random.randint(0, 16777215)
+    if len(val[1:])<6:
+        val = '#'+(6-len(val[1:]))*'0'+val[1:]
+    return val
 
-  global _login_success
-  _login_success = False
+def hex_to_rgb(value):
+    value = value.lstrip('#')
+    lv = len(value)
+    return tuple(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
 
-  DBusGMainLoop(set_as_default=True)
-  loop = MainLoop()
+def rgb_to_hex(rgb):
+    return '#%02x%02x%02x' % rgb
 
-  def quit(result):
-    global _login_success
-    loop.quit()
-    if result:
-            _login_success = True
-
-  cd = CredentialsManagementTool()
-  d = cd.login()
-  d.addCallbacks(quit)
-  loop.run()
-  if not _login_success:
-    sys.exit(1)
-
-if len(sys.argv) <= 1:
-  login()
-  sys.exit(1)
-
-if sys.argv[1] == "login":
-  login()
+def contraste(hexvalue):
+    r,g,b = hex_to_rgb(hexvalue)
+    a =1 - ( 0.299 * r + 0.587 * g + 0.114 * b)/255.
+    if a < 0.5:
+        d = 0
+    else:
+        d = 255
+    return  rgb_to_hex((d,d,d))

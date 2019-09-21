@@ -19,28 +19,24 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import os
 import gi
 try:
     gi.require_version('Gtk', '3.0')
-    gi.require_version('GObject', '2.0')
-    gi.require_version('WebKit2', '4.0')
+    gi.require_version('GLib', '2.0')
     gi.require_version('AppIndicator3', '0.1')
     gi.require_version('Notify', '0.7')
 except Exception as e:
     print(e)
     exit(-1)
+from gi.repository import Gtk
 from gi.repository import GLib
 from gi.repository import AppIndicator3 as appindicator
-from gi.repository import Gtk
 from gi.repository import GdkPixbuf
 from gi.repository import Notify
-
+import os
 import urllib
 import time
 import dbus
-import locale
-import gettext
 import datetime
 import webbrowser
 from calendardialog import CalendarDialog
@@ -48,15 +44,10 @@ from calendarwindow import CalendarWindow
 from addcalendarwindow import AddCalendarWindow
 from eventwindow import EventWindow
 from googlecalendarapi import GoogleCalendar
-#
 import comun
 from configurator import Configuration
 from preferences_dialog import Preferences
-#
-locale.setlocale(locale.LC_ALL, '')
-gettext.bindtextdomain(comun.APP, comun.LANGDIR)
-gettext.textdomain(comun.APP)
-_ = gettext.gettext
+from comun import _
 
 def wait(time_lapse):
     time_start = time.time()
@@ -438,9 +429,8 @@ Jiri Grönroos <https://launchpad.net/~jiri-gronroos>\n')
 
 def main():
     Notify.init("calendar-indicator")
-    ci=CalendarIndicator()
+    CalendarIndicator()
     Gtk.main()
 
 if __name__ == "__main__":
     main()
-
