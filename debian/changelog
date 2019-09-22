@@ -1,3 +1,9 @@
+calendar-indicator (0.4.0-0extras19.04.0) disco; urgency=medium
+
+  * Change preferences dialog and options 
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 22 Sep 2019 09:58:53 +0200
+
 calendar-indicator (0.3.9-0extras19.04.0ubuntu2) disco; urgency=medium
 
   * Change to Webkit2
