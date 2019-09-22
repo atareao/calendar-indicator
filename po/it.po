@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calendar-indicator 0.3.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-21 18:22+0200\n"
+"POT-Creation-Date: 2019-09-22 12:02+0200\n"
 "PO-Revision-Date: 2012-08-13 10:16+0000\n"
 "Last-Translator: Wormhole <Unknown>\n"
 "Language-Team: Italiano-Svizzera\n"
@@ -19,97 +19,120 @@ msgstr ""
 "X-Launchpad-Export-Date: 2015-09-17 19:36+0000\n"
 "X-Poedit-Language: Italian\n"
 
-#: src/addeventwindow.py:40 src/calendarwindow.py:196 src/eventwindow.py:42
-#: src/preferences_dialog.py:98 src/addcalendarwindow.py:93
+#: src/addeventwindow.py:40 src/calendarwindow.py:204 src/eventwindow.py:40
+#: src/calendaroption.py:66 src/addcalendarwindow.py:93
 msgid "Calendar"
 msgstr "Calendario"
 
-#: src/addeventwindow.py:60 src/eventwindow.py:87
+#: src/addeventwindow.py:60 src/eventwindow.py:85
 #, fuzzy
 msgid "To calendar"
 msgstr "Mostra calendario"
 
-#: src/addeventwindow.py:75 src/eventwindow.py:102
+#: src/addeventwindow.py:75 src/eventwindow.py:100
 msgid "Title"
 msgstr ""
 
-#: src/addeventwindow.py:83 src/eventwindow.py:110
+#: src/addeventwindow.py:83 src/eventwindow.py:108
 msgid "All day event"
 msgstr ""
 
-#: src/addeventwindow.py:91 src/eventwindow.py:118
+#: src/addeventwindow.py:91 src/eventwindow.py:116
 msgid "Start date"
 msgstr ""
 
-#: src/addeventwindow.py:102 src/eventwindow.py:129
+#: src/addeventwindow.py:102 src/eventwindow.py:127
 msgid "End date"
 msgstr ""
 
-#: src/addeventwindow.py:113 src/eventwindow.py:140
+#: src/addeventwindow.py:113 src/eventwindow.py:138
 msgid "Description"
 msgstr ""
 
-#: src/calendarwindow.py:47 src/addcalendarwindow.py:40
+#: src/calendarwindow.py:55 src/addcalendarwindow.py:40
 msgid "Monday"
 msgstr ""
 
-#: src/calendarwindow.py:47 src/addcalendarwindow.py:40
+#: src/calendarwindow.py:55 src/addcalendarwindow.py:40
 msgid "Tuesday"
 msgstr ""
 
-#: src/calendarwindow.py:47 src/addcalendarwindow.py:40
+#: src/calendarwindow.py:55 src/addcalendarwindow.py:40
 msgid "Wednesday"
 msgstr ""
 
-#: src/calendarwindow.py:47 src/addcalendarwindow.py:40
+#: src/calendarwindow.py:55 src/addcalendarwindow.py:40
 msgid "Thursday"
 msgstr ""
 
-#: src/calendarwindow.py:48 src/addcalendarwindow.py:41
+#: src/calendarwindow.py:56 src/addcalendarwindow.py:41
 msgid "Friday"
 msgstr ""
 
-#: src/calendarwindow.py:48 src/addcalendarwindow.py:41
+#: src/calendarwindow.py:56 src/addcalendarwindow.py:41
 msgid "Saturday"
 msgstr ""
 
-#: src/calendarwindow.py:48 src/addcalendarwindow.py:41
+#: src/calendarwindow.py:56 src/addcalendarwindow.py:41
 msgid "Sunday"
 msgstr ""
 
-#: src/calendarwindow.py:110 src/calendarindicator.py:312
+#: src/calendarwindow.py:118 src/calendarindicator.py:382
 msgid "Are you sure you want to revove this event?"
 msgstr ""
 
-#: src/calendarwindow.py:136 src/calendarindicator.py:333
+#: src/calendarwindow.py:144 src/calendarindicator.py:403
 msgid "Are you sure you want to edit this event?"
 msgstr ""
 
-#: src/calendarwindow.py:219
+#: src/calendarwindow.py:292
 msgid "One year less"
 msgstr ""
 
-#: src/calendarwindow.py:228
+#: src/calendarwindow.py:300
 msgid "One month less"
 msgstr ""
 
-#: src/calendarwindow.py:240
-msgid "One month more"
-msgstr ""
-
-#: src/calendarwindow.py:249
-msgid "One year more"
-msgstr ""
-
-#: src/calendarwindow.py:263
+#: src/calendarwindow.py:308
 msgid "Today"
 msgstr ""
 
-#: src/calendarwindow.py:277
-msgid "Close"
+#: src/calendarwindow.py:315
+msgid "One year more"
 msgstr ""
 
-#: src/calendarindicator.py:136
+#: src/calendarwindow.py:322
+msgid "One month more"
+msgstr ""
+
+#: src/otheroption.py:56
+msgid "Options"
+msgstr "Opzioni"
+
+#: src/otheroption.py:75 src/otheroption.py:76
+msgid "Time between automatic syncronizations (hours)"
+msgstr ""
+
+#: src/otheroption.py:82
+msgid "Autostart"
+msgstr "Avvio automatico"
+
+#: src/otheroption.py:83
+msgid "Init Calendar Indicator with the operating system."
+msgstr ""
+
+#: src/otheroption.py:89
+msgid "Theme light"
+msgstr "Tema chiaro"
+
+#: src/otheroption.py:90
+#, fuzzy
+msgid "Would theme for Calendar Indicator icons do you prefer?"
+msgstr ""
+"Devi permettere a Calendar-Indicator di accedere al tuo calendario di Google "
+"per funzionare"
+
+#: src/calendarindicator.py:208
 #, fuzzy
 msgid ""
 "You have to authorize Calendar-Indicator to manage your Google Calendar.\n"
@@ -118,148 +141,156 @@ msgstr ""
 "Devi permettere a Calendar-Indicator di accedere al tuo calendario di Google "
 "per funzionare"
 
-#: src/calendarindicator.py:190
+#: src/calendarindicator.py:264
 #, fuzzy
 msgid "Add new calendar"
 msgstr "Mostra calendario"
 
-#: src/calendarindicator.py:191
+#: src/calendarindicator.py:265
 #, fuzzy
 msgid "Add new event"
 msgstr "Nuovo evento:"
 
-#: src/calendarindicator.py:193
+#: src/calendarindicator.py:267
 #, fuzzy
 msgid "Sync with google calendar"
 msgstr "Un indicatore per Google Calendar"
 
-#: src/calendarindicator.py:194
+#: src/calendarindicator.py:268
 msgid "Show Calendar"
 msgstr "Mostra calendario"
 
-#: src/calendarindicator.py:195 src/preferences_dialog.py:50
+#: src/calendarindicator.py:269 src/preferences_dialog.py:52
 #: src/calendardialog.py:70
 msgid "Preferences"
 msgstr "Preferenze"
 
-#: src/calendarindicator.py:197
+#: src/calendarindicator.py:271
 msgid "Help"
 msgstr "Aiuto"
 
-#: src/calendarindicator.py:200
+#: src/calendarindicator.py:274
 msgid "Exit"
 msgstr "Esci"
 
-#: src/calendarindicator.py:226
+#: src/calendarindicator.py:300
 msgid "New event:"
 msgstr "Nuovo evento:"
 
-#: src/calendarindicator.py:235
+#: src/calendarindicator.py:309
 msgid "Event finished:"
 msgstr "Evento terminato:"
 
-#: src/calendarindicator.py:264
-msgid "In Launchpad"
+#: src/calendarindicator.py:337
+msgid "GitHub Project"
 msgstr ""
 
-#: src/calendarindicator.py:265
+#: src/calendarindicator.py:338
 msgid "Get help online..."
 msgstr "Ottieni aiuto online..."
 
-#: src/calendarindicator.py:266
+#: src/calendarindicator.py:339
 msgid "Translate this application..."
 msgstr "Traduci questa applicazione..."
 
-#: src/calendarindicator.py:267
+#: src/calendarindicator.py:340
 msgid "Report a bug..."
 msgstr "Segnala un problema..."
 
-#: src/calendarindicator.py:269
+#: src/calendarindicator.py:342
 msgid "Homepage"
 msgstr ""
 
-#: src/calendarindicator.py:270
-msgid "Follow us in Twitter"
+#: src/calendarindicator.py:343
+msgid "Me in Twitter"
 msgstr ""
 
-#: src/calendarindicator.py:271
-msgid "Follow us in Google+"
+#: src/calendarindicator.py:344
+msgid "Me in GitHub"
 msgstr ""
 
-#: src/calendarindicator.py:272
-msgid "Follow us in Facebook"
-msgstr ""
-
-#: src/calendarindicator.py:274
+#: src/calendarindicator.py:346
 msgid "About"
 msgstr "Informazioni"
 
-#: src/calendarindicator.py:389
+#: src/calendarindicator.py:467
 msgid "An indicator for Google Calendar"
 msgstr "Un indicatore per Google Calendar"
 
-#: src/preferences_dialog.py:65
-msgid "Login"
-msgstr "Accesso"
+#: src/preferences_dialog.py:78
+#, fuzzy
+msgid "Google Calendar"
+msgstr "Mostra calendario"
 
-#: src/preferences_dialog.py:73
-msgid "Allow access to Google Calendar"
-msgstr "Consentire l'accesso al calendario di Google"
-
-#: src/preferences_dialog.py:83
+#: src/preferences_dialog.py:81
 #, fuzzy
 msgid "Calendar options"
 msgstr "Calendario"
 
-#: src/preferences_dialog.py:100
+#: src/preferences_dialog.py:84
+#, fuzzy
+msgid "General options"
+msgstr "Calendario"
+
+#: src/calendaroption.py:47
+#, fuzzy
+msgid "Calendars"
+msgstr "Calendario"
+
+#: src/calendaroption.py:69
 msgid "Background color"
 msgstr ""
 
-#: src/preferences_dialog.py:102
+#: src/calendaroption.py:72
 msgid "Text color"
 msgstr ""
 
-#: src/preferences_dialog.py:106
+#: src/calendaroption.py:77
 #, fuzzy
 msgid "Show calendar"
 msgstr "Mostra calendario"
 
-#: src/preferences_dialog.py:111 src/addcalendarwindow.py:113
+#: src/calendaroption.py:83 src/addcalendarwindow.py:113
 #, fuzzy
 msgid "Calendar name"
 msgstr "Calendario"
 
-#: src/preferences_dialog.py:116
-msgid "Options"
-msgstr "Opzioni"
-
-#: src/preferences_dialog.py:123
-msgid "Time between automatic syncronizations (hours)"
-msgstr ""
-
-#: src/preferences_dialog.py:132
-msgid "Autostart"
-msgstr "Avvio automatico"
-
-#: src/preferences_dialog.py:139
-msgid "Theme light"
-msgstr "Tema chiaro"
-
-#: src/preferences_dialog.py:175
+#: src/calendaroption.py:94
 msgid "Select background color"
 msgstr ""
 
-#: src/preferences_dialog.py:182
+#: src/calendaroption.py:103
 msgid "Select foreground color"
 msgstr ""
 
-#: src/preferences_dialog.py:206
+#: src/loginoption.py:56
+#, fuzzy
+msgid "Google calendar permissions"
+msgstr "Calendario"
+
+#: src/loginoption.py:70
+#, fuzzy
+msgid "Permissions for Google Calendar"
+msgstr "Un indicatore per Google Calendar"
+
+#: src/loginoption.py:71
+#, fuzzy
+msgid "Enable read and write permissions for Google Calendar."
+msgstr "Un indicatore per Google Calendar"
+
+#: src/loginoption.py:93
 #, fuzzy
 msgid ""
 "You have to authorize Calendar-Indicator to use it, do you want to authorize?"
 msgstr ""
 "Devi permettere a Calendar-Indicator di accedere al tuo calendario di Google "
 "per funzionare"
+
+#~ msgid "Login"
+#~ msgstr "Accesso"
+
+#~ msgid "Allow access to Google Calendar"
+#~ msgstr "Consentire l'accesso al calendario di Google"
 
 #, fuzzy
 #~ msgid "Calendar-Indicator"

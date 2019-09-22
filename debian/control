@@ -12,10 +12,13 @@ Depends: ${misc:Depends}, ${python:Depends},
 	python3,
 	python3-gi,
 	gir1.2-gtk-3.0,
+	gir1.2-glib-2.0,
 	gir1.2-gdkpixbuf-2.0,
 	gir1.2-appindicator3-0.1,
 	gir1.2-notify-0.7,
 	gir1.2-webkit2-4.0,
 	python3-requests,
-	python3-dateutil
+	python3-dateutil,
+	gir1.2-handy-0.0,
+	yaru-theme-gtk
 Description: An indicator for Google Calendar
