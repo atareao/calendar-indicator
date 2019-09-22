@@ -43,7 +43,7 @@ from configurator import Configuration
 from googlecalendarapi import GoogleCalendar
 from logindialog import LoginDialog
 from eventwindow import EventWindow
-from preferences_dialog import get_calendar_from_options
+from calendaroption import get_calendar_from_options
 import comun
 from comun import _
 from utils import tohex, hex_to_rgb, rgb_to_hex, contraste
@@ -266,7 +266,17 @@ class CalendarWindow(Gtk.Dialog):
             self.adate = adate
 
         self.set_date()
+        self.center()
         self.show_all()
+
+    def center(self):
+        monitor = Gdk.Display.get_primary_monitor(Gdk.Display.get_default())
+        scale = monitor.get_scale_factor()
+        monitor_width = monitor.get_geometry().width / scale
+        monitor_height = monitor.get_geometry().height / scale
+        width = self.get_preferred_width()[0]
+        height = self.get_preferred_height()[0]
+        self.move((monitor_width - width)/2, (monitor_height - height)/2)
 
     def init_headerbar(self):
         self.control = {}
