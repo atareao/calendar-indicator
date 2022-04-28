@@ -18,7 +18,7 @@
 ## Install
 
 ```sh
-sudo add-apt-repository ppa:atareao\atareao
+sudo add-apt-repository ppa:atareao/atareao
 sudo apt update
 sudo apt install calendar-indicator
 ```
